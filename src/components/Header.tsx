@@ -1,13 +1,14 @@
 import { useState } from "react";
-import { Menu, X, MapPin, Phone } from "lucide-react";
+import { Menu, X, MapPin, Phone, Clock } from "lucide-react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
     { href: "#hem", label: "Hem" },
-    { href: "#produkter", label: "Produkter" },
+    { href: "#sortiment", label: "Sortiment" },
     { href: "#om-oss", label: "Om oss" },
+    { href: "#galleri", label: "Galleri" },
     { href: "#kontakt", label: "Kontakt" },
   ];
 
@@ -15,14 +16,18 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
       {/* Top bar */}
       <div className="bg-primary text-primary-foreground py-2">
-        <div className="container mx-auto px-4 flex flex-wrap justify-center md:justify-between items-center text-sm gap-2">
+        <div className="container mx-auto px-4 flex flex-wrap justify-center lg:justify-between items-center text-sm gap-x-6 gap-y-1">
           <div className="flex items-center gap-2">
-            <MapPin className="w-4 h-4" />
+            <MapPin className="w-4 h-4 flex-shrink-0" />
             <span>Smedjegatan 24, 352 46 Växjö</span>
           </div>
           <div className="flex items-center gap-2">
-            <Phone className="w-4 h-4" />
-            <span>Öppet: Mån-Lör 09:00-20:00, Sön 10:00-18:00</span>
+            <Phone className="w-4 h-4 flex-shrink-0" />
+            <a href="tel:+46733601785" className="hover:underline">+46 73 360 17 85</a>
+          </div>
+          <div className="flex items-center gap-2">
+            <Clock className="w-4 h-4 flex-shrink-0" />
+            <span>Öppet: Mån-Sön 08:00-21:00</span>
           </div>
         </div>
       </div>
@@ -36,12 +41,12 @@ const Header = () => {
             </div>
             <div>
               <h1 className="font-display text-2xl font-bold text-foreground">City Food</h1>
-              <p className="text-xs text-muted-foreground">Växjö sedan 2009</p>
+              <p className="text-xs text-muted-foreground">Arabisk livsmedelsbutik i Växjö</p>
             </div>
           </a>
 
           {/* Desktop navigation */}
-          <ul className="hidden md:flex items-center gap-8">
+          <ul className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
               <li key={link.href}>
                 <a
@@ -56,7 +61,7 @@ const Header = () => {
 
           {/* Mobile menu button */}
           <button
-            className="md:hidden p-2 text-foreground"
+            className="lg:hidden p-2 text-foreground"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -66,7 +71,7 @@ const Header = () => {
 
         {/* Mobile navigation */}
         {isMenuOpen && (
-          <ul className="md:hidden mt-4 pb-4 space-y-4 animate-fade-in">
+          <ul className="lg:hidden mt-4 pb-4 space-y-4 animate-fade-in">
             {navLinks.map((link) => (
               <li key={link.href}>
                 <a
