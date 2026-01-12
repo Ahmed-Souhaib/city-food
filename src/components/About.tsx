@@ -1,26 +1,12 @@
-import { Users, Award, Heart, Leaf } from "lucide-react";
+import { CheckCircle } from "lucide-react";
 
-const values = [
-  {
-    icon: Heart,
-    title: "Passion för mat",
-    description: "Vi älskar det vi gör och det syns i varje produkt vi erbjuder.",
-  },
-  {
-    icon: Award,
-    title: "Kvalitet först",
-    description: "Vi väljer noggrant ut våra leverantörer för att garantera bästa kvalitet.",
-  },
-  {
-    icon: Leaf,
-    title: "Färska varor",
-    description: "Dagsleveranser säkerställer att du alltid får de färskaste produkterna.",
-  },
-  {
-    icon: Users,
-    title: "Familjeägd",
-    description: "Ett familjeföretag som värnar om personlig service och gemenskap.",
-  },
+const features = [
+  "Specialiserade på arabiska och orientaliska produkter",
+  "Stort urval av halal-certifierade varor",
+  "Färska produkter levereras dagligen",
+  "Lokalt ägd och driven butik",
+  "Kunnig och hjälpsam personal",
+  "Konkurrensmässiga priser",
 ];
 
 const About = () => {
@@ -34,61 +20,71 @@ const About = () => {
               Om oss
             </span>
             <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mt-4 mb-6">
-              Din lokala matbutik <br />
-              <span className="text-primary">sedan 2009</span>
+              Din lokala arabiska <br />
+              <span className="text-primary">livsmedelsbutik</span>
             </h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                City Food grundades 2009 med en vision att erbjuda Växjös invånare 
-                autentiska smaker från Mellanöstern och Medelhavet. Vad som började 
-                som en liten familjebutik har vuxit till en destination för alla 
-                som söker kvalitetsprodukter och äkta smaker.
+                Välkommen till City Food – din pålitliga källa för arabiska och orientaliska 
+                livsmedel i Växjö. Vi är en lokal butik som brinner för att erbjuda våra 
+                kunder de bästa produkterna från Mellanöstern och Medelhavsregionen.
               </p>
               <p>
-                Med över 15 års erfarenhet och ett team på 12 dedikerade medarbetare 
-                fortsätter vi att växa och utvecklas. Vårt mål är enkelt: att erbjuda 
-                bästa möjliga produkter till rättvisa priser, med service som får 
-                dig att känna dig som hemma.
+                Hos oss hittar du allt från färska grönsaker och kryddor till halal-certifierat 
+                kött, traditionellt bröd och sötsaker. Vi strävar alltid efter att ha de 
+                produkter du behöver för att laga autentiska rätter hemma.
               </p>
               <p>
-                Vi importerar direkt från pålitliga producenter i Libanon, Turkiet, 
-                Marocko och många andra länder för att säkerställa autenticitet 
-                och kvalitet i varje produkt.
+                Vår passion är att dela med oss av de fantastiska smakerna från våra hemländer 
+                och att hjälpa dig hitta precis det du söker. Välkommen in – vi ser fram 
+                emot att hjälpa dig!
               </p>
             </div>
 
-            <div className="mt-8 flex items-center gap-6">
-              <div className="h-16 w-1 bg-primary rounded-full" />
-              <div>
-                <p className="font-display text-lg font-semibold text-foreground">
-                  City Food Växjö AB
-                </p>
-                <p className="text-muted-foreground text-sm">
-                  Org.nr: 556779-3905
-                </p>
-              </div>
-            </div>
+            {/* Features list */}
+            <ul className="mt-8 grid sm:grid-cols-2 gap-3">
+              {features.map((feature) => (
+                <li key={feature} className="flex items-center gap-3 text-foreground">
+                  <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
+                  <span className="text-sm">{feature}</span>
+                </li>
+              ))}
+            </ul>
           </div>
 
-          {/* Values grid */}
-          <div className="grid sm:grid-cols-2 gap-6">
-            {values.map((value, index) => (
-              <div
-                key={value.title}
-                className="bg-card p-6 rounded-xl shadow-soft card-hover"
-                style={{ animationDelay: `${index * 100}ms` }}
-              >
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                  <value.icon className="w-6 h-6 text-primary" />
+          {/* Stats and highlight */}
+          <div className="space-y-6">
+            <div className="bg-card rounded-2xl p-8 shadow-card">
+              <div className="grid grid-cols-2 gap-6">
+                <div className="text-center p-4 bg-muted rounded-xl">
+                  <p className="font-display text-4xl font-bold text-primary">1000+</p>
+                  <p className="text-muted-foreground text-sm mt-1">Produkter</p>
                 </div>
-                <h3 className="font-display text-lg font-semibold text-foreground mb-2">
-                  {value.title}
-                </h3>
-                <p className="text-muted-foreground text-sm">
-                  {value.description}
-                </p>
+                <div className="text-center p-4 bg-muted rounded-xl">
+                  <p className="font-display text-4xl font-bold text-primary">7</p>
+                  <p className="text-muted-foreground text-sm mt-1">Dagar öppet</p>
+                </div>
+                <div className="text-center p-4 bg-muted rounded-xl">
+                  <p className="font-display text-4xl font-bold text-primary">13h</p>
+                  <p className="text-muted-foreground text-sm mt-1">Per dag</p>
+                </div>
+                <div className="text-center p-4 bg-muted rounded-xl">
+                  <p className="font-display text-4xl font-bold text-primary">100%</p>
+                  <p className="text-muted-foreground text-sm mt-1">Halal</p>
+                </div>
               </div>
-            ))}
+            </div>
+
+            <div className="bg-primary/10 rounded-2xl p-8 border border-primary/20">
+              <h3 className="font-display text-xl font-semibold text-foreground mb-3">
+                Vårt löfte till dig
+              </h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Vi garanterar färska produkter, schyssta priser och en shoppingupplevelse 
+                som känns som hemma. Kommer du inte hittar det du söker? Fråga oss – 
+                vi gör vårt bästa för att ordna det åt dig!
+              </p>
+            </div>
           </div>
         </div>
       </div>

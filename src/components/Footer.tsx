@@ -15,16 +15,13 @@ const Footer = () => {
               </div>
               <div>
                 <h3 className="font-display text-2xl font-bold">City Food</h3>
-                <p className="text-sm text-background/60">Växjö sedan 2009</p>
+                <p className="text-sm text-background/60">Arabisk livsmedelsbutik i Växjö</p>
               </div>
             </div>
             <p className="text-background/80 max-w-md leading-relaxed mb-6">
               Din destination för autentiska smaker från Mellanöstern och Medelhavet. 
-              Vi erbjuder ett brett sortiment av livsmedel, kryddor, färskvaror och 
-              mycket mer till hela familjen.
-            </p>
-            <p className="text-sm text-background/60">
-              City Food Växjö AB • Org.nr: 556779-3905
+              Vi erbjuder ett brett sortiment av livsmedel, kryddor, halal-kött, 
+              färskvaror och mycket mer till hela familjen.
             </p>
           </div>
 
@@ -34,8 +31,9 @@ const Footer = () => {
             <ul className="space-y-3">
               {[
                 { href: "#hem", label: "Hem" },
-                { href: "#produkter", label: "Produkter" },
+                { href: "#sortiment", label: "Sortiment" },
                 { href: "#om-oss", label: "Om oss" },
+                { href: "#galleri", label: "Galleri" },
                 { href: "#kontakt", label: "Kontakt" },
               ].map((link) => (
                 <li key={link.href}>
@@ -55,15 +53,29 @@ const Footer = () => {
             <h4 className="font-display text-lg font-semibold mb-6">Kontakt</h4>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-primary mt-0.5" />
-                <span className="text-background/80">
+                <MapPin className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+                <a 
+                  href="https://www.google.com/maps/dir//Smedjegatan+24,+352+46+Växjö"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-background/80 hover:text-primary transition-colors"
+                >
                   Smedjegatan 24<br />352 46 Växjö
-                </span>
+                </a>
               </li>
               <li className="flex items-start gap-3">
-                <Clock className="w-5 h-5 text-primary mt-0.5" />
+                <Phone className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+                <a 
+                  href="tel:+46733601785"
+                  className="text-background/80 hover:text-primary transition-colors"
+                >
+                  +46 73 360 17 85
+                </a>
+              </li>
+              <li className="flex items-start gap-3">
+                <Clock className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                 <span className="text-background/80">
-                  Mån-Lör: 09:00-20:00<br />Sön: 10:00-18:00
+                  Mån-Sön: 08:00-21:00
                 </span>
               </li>
             </ul>
@@ -72,7 +84,7 @@ const Footer = () => {
 
         <div className="border-t border-background/20 mt-12 pt-8 text-center">
           <p className="text-background/60 text-sm">
-            © {currentYear} City Food Växjö AB. Alla rättigheter förbehållna.
+            © {currentYear} City Food – Växjö. Alla rättigheter förbehållna.
           </p>
         </div>
       </div>
