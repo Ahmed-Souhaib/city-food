@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X, MapPin, Phone, Clock } from "lucide-react";
+import logo from "@/assets/logo.jpg";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -35,14 +36,12 @@ const Header = () => {
       {/* Main navigation */}
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <a href="#hem" className="flex items-center gap-3">
-            <div className="w-12 h-12 bg-gradient-hero rounded-full flex items-center justify-center shadow-soft">
-              <span className="text-primary-foreground font-display font-bold text-xl">CF</span>
-            </div>
-            <div>
-              <h1 className="font-display text-2xl font-bold text-foreground">City Food</h1>
-              <p className="text-xs text-muted-foreground">Arabisk livsmedelsbutik i Växjö</p>
-            </div>
+          <a href="#hem" className="flex items-center">
+            <img 
+              src={logo} 
+              alt="City Food - Arabisk livsmedelsbutik i Växjö" 
+              className="h-14 w-auto"
+            />
           </a>
 
           {/* Desktop navigation */}
