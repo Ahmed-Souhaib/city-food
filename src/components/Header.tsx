@@ -1,20 +1,23 @@
 import { useState } from "react";
 import { Menu, X, MapPin, Phone, Clock } from "lucide-react";
 import logo from "@/assets/logo.jpg";
+import LanguageSwitcher from "./LanguageSwitcher";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { t, dir } = useLanguage();
 
   const navLinks = [
-    { href: "#hem", label: "Hem" },
-    { href: "#sortiment", label: "Sortiment" },
-    { href: "#om-oss", label: "Om oss" },
-    { href: "#galleri", label: "Galleri" },
-    { href: "#kontakt", label: "Kontakt" },
+    { href: "#hem", label: t("nav.home") },
+    { href: "#sortiment", label: t("nav.products") },
+    { href: "#om-oss", label: t("nav.about") },
+    { href: "#galleri", label: t("nav.gallery") },
+    { href: "#kontakt", label: t("nav.contact") },
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border" dir={dir}>
       {/* Top bar */}
       <div className="bg-primary text-primary-foreground py-2">
         <div className="container mx-auto px-4 flex flex-wrap justify-center lg:justify-between items-center text-sm gap-x-6 gap-y-1">
@@ -28,7 +31,7 @@ const Header = () => {
           </div>
           <div className="flex items-center gap-2">
             <Clock className="w-4 h-4 flex-shrink-0" />
-            <span>Öppet: Mån-Sön 08:00-21:00</span>
+            <span>{t("header.open")}</span>
           </div>
         </div>
       </div>
@@ -45,27 +48,33 @@ const Header = () => {
           </a>
 
           {/* Desktop navigation */}
-          <ul className="hidden lg:flex items-center gap-8">
-            {navLinks.map((link) => (
-              <li key={link.href}>
-                <a
-                  href={link.href}
-                  className="text-foreground hover:text-primary transition-colors font-medium"
-                >
-                  {link.label}
-                </a>
-              </li>
-            ))}
-          </ul>
+          <div className="hidden lg:flex items-center gap-8">
+            <ul className="flex items-center gap-8">
+              {navLinks.map((link) => (
+                <li key={link.href}>
+                  <a
+                    href={link.href}
+                    className="text-foreground hover:text-primary transition-colors font-medium"
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+            <LanguageSwitcher />
+          </div>
 
           {/* Mobile menu button */}
-          <button
-            className="lg:hidden p-2 text-foreground"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            aria-label="Toggle menu"
-          >
-            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
+          <div className="lg:hidden flex items-center gap-2">
+            <LanguageSwitcher />
+            <button
+              className="p-2 text-foreground"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label="Toggle menu"
+            >
+              {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+          </div>
         </div>
 
         {/* Mobile navigation */}
