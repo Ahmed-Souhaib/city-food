@@ -1,18 +1,16 @@
 import { useState } from "react";
-import gallery1 from "@/assets/gallery-1.jpg";
-import gallery2 from "@/assets/gallery-2.jpg";
-import gallery3 from "@/assets/gallery-3.jpg";
-import gallery4 from "@/assets/gallery-4.jpg";
-import gallery5 from "@/assets/gallery-5.jpg";
-import gallery6 from "@/assets/gallery-6.jpg";
+import storeExterior from "@/assets/store-exterior.jpg";
+import offerVegetables from "@/assets/offer-vegetables.jpg";
+import offerDeals from "@/assets/offer-deals.jpg";
+import offerFruits from "@/assets/offer-fruits.jpg";
+import offerProduce from "@/assets/offer-produce.jpg";
 
 const images = [
-  { src: gallery1, alt: "City Food butik - välsorterade hyllor", title: "Vårt breda sortiment" },
-  { src: gallery2, alt: "Färgglada kryddor", title: "Äkta kryddor" },
-  { src: gallery3, alt: "Färska grönsaker", title: "Färska varor dagligen" },
-  { src: gallery4, alt: "Nybakat bröd", title: "Traditionellt bröd" },
-  { src: gallery5, alt: "Halal-kött", title: "Halal-certifierat kött" },
-  { src: gallery6, alt: "Nötter och dadlar", title: "Nötter & torkad frukt" },
+  { src: storeExterior, alt: "City Food butik i Växjö", title: "Vår butik" },
+  { src: offerVegetables, alt: "Färska grönsaker hos City Food", title: "Färska grönsaker" },
+  { src: offerFruits, alt: "Färsk frukt hos City Food", title: "Färsk frukt" },
+  { src: offerProduce, alt: "Exotiska frukter och grönsaker", title: "Exotiska varor" },
+  { src: offerDeals, alt: "Veckans erbjudanden - Halv pris", title: "Veckans erbjudanden" },
 ];
 
 const Gallery = () => {

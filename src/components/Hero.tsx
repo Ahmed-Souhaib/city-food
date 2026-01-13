@@ -1,4 +1,4 @@
-import heroImage from "@/assets/hero-store.jpg";
+import storeExterior from "@/assets/store-exterior.jpg";
 
 const Hero = () => {
   return (
@@ -6,9 +6,9 @@ const Hero = () => {
       {/* Background image with overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src={heroImage}
+          src={storeExterior}
           alt="City Food butik - Arabiska och orientaliska livsmedel i Växjö"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-center"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70" />
       </div>
