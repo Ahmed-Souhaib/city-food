@@ -13,6 +13,7 @@ const translations: Record<Language, Record<string, string>> = {
   sv: {
     // Navigation
     "nav.home": "Hem",
+    "nav.offers": "Veckans Erbjudanden",
     "nav.products": "Sortiment",
     "nav.about": "Om oss",
     "nav.gallery": "Galleri",
@@ -103,6 +104,7 @@ const translations: Record<Language, Record<string, string>> = {
   ar: {
     // Navigation
     "nav.home": "الرئيسية",
+    "nav.offers": "عروض الأسبوع",
     "nav.products": "المنتجات",
     "nav.about": "من نحن",
     "nav.gallery": "معرض الصور",
@@ -193,6 +195,7 @@ const translations: Record<Language, Record<string, string>> = {
   en: {
     // Navigation
     "nav.home": "Home",
+    "nav.offers": "Weekly Offers",
     "nav.products": "Products",
     "nav.about": "About Us",
     "nav.gallery": "Gallery",

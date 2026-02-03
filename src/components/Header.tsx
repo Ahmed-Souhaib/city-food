@@ -1,8 +1,9 @@
 import { useState } from "react";
-import { Menu, X, MapPin, Phone, Clock } from "lucide-react";
+import { Menu, X, MapPin, Phone, Clock, Tag } from "lucide-react";
 import logo from "@/assets/logo.jpg";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { Button } from "./ui/button";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,6 +11,7 @@ const Header = () => {
 
   const navLinks = [
     { href: "#hem", label: t("nav.home") },
+    { href: "#erbjudanden", label: t("nav.offers") },
     { href: "#sortiment", label: t("nav.products") },
     { href: "#om-oss", label: t("nav.about") },
     { href: "#galleri", label: t("nav.gallery") },
@@ -48,8 +50,15 @@ const Header = () => {
           </a>
 
           {/* Desktop navigation */}
-          <div className="hidden lg:flex items-center gap-8">
-            <ul className="flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-6">
+            {/* Special CTA Button for Weekly Offers */}
+            <a href="#erbjudanden">
+              <Button variant="default" className="gap-2 animate-pulse hover:animate-none">
+                <Tag className="w-4 h-4" />
+                {t("nav.offers")}
+              </Button>
+            </a>
+            <ul className="flex items-center gap-6">
               {navLinks.map((link) => (
                 <li key={link.href}>
                   <a
@@ -80,6 +89,17 @@ const Header = () => {
         {/* Mobile navigation */}
         {isMenuOpen && (
           <ul className="lg:hidden mt-4 pb-4 space-y-4 animate-fade-in">
+            {/* Special CTA for mobile */}
+            <li>
+              <a
+                href="#erbjudanden"
+                className="flex items-center gap-2 text-primary font-bold py-2"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                <Tag className="w-4 h-4" />
+                {t("nav.offers")}
+              </a>
+            </li>
             {navLinks.map((link) => (
               <li key={link.href}>
                 <a
