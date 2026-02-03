@@ -92,6 +92,12 @@ const translations: Record<Language, Record<string, string>> = {
     "footer.contact": "Kontakt",
     "footer.hours": "Öppettider",
     "footer.rights": "Alla rättigheter förbehållna.",
+    
+    // Weekly Offers
+    "offers.badge": "Spara pengar",
+    "offers.title": "Veckans Erbjudanden",
+    "offers.subtitle": "Missa inte våra fantastiska erbjudanden - gäller endast denna vecka!",
+    "offers.cta": "Besök butiken",
   },
   
   ar: {
@@ -176,6 +182,12 @@ const translations: Record<Language, Record<string, string>> = {
     "footer.contact": "اتصل بنا",
     "footer.hours": "ساعات العمل",
     "footer.rights": "جميع الحقوق محفوظة.",
+    
+    // Weekly Offers
+    "offers.badge": "وفر المال",
+    "offers.title": "عروض الأسبوع",
+    "offers.subtitle": "لا تفوت عروضنا الرائعة - صالحة هذا الأسبوع فقط!",
+    "offers.cta": "زوروا المتجر",
   },
   
   en: {
@@ -260,6 +272,12 @@ const translations: Record<Language, Record<string, string>> = {
     "footer.contact": "Contact",
     "footer.hours": "Opening Hours",
     "footer.rights": "All rights reserved.",
+    
+    // Weekly Offers
+    "offers.badge": "Save Money",
+    "offers.title": "Weekly Offers",
+    "offers.subtitle": "Don't miss our amazing offers - valid this week only!",
+    "offers.cta": "Visit the Store",
   },
 };
 
