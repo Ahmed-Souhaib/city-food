@@ -65,11 +65,12 @@ const translations: Record<Language, Record<string, string>> = {
     // Gallery
     "gallery.title": "Galleri",
     "gallery.subtitle": "Ta en titt på vår butik och vårt sortiment",
-    "gallery.store": "Vår butik",
-    "gallery.vegetables": "Färska grönsaker",
-    "gallery.fruits": "Färsk frukt",
-    "gallery.exotic": "Exotiska varor",
-    "gallery.offers": "Veckans erbjudanden",
+    "gallery.image1": "Bild 1",
+    "gallery.image2": "Bild 2",
+    "gallery.image3": "Bild 3",
+    "gallery.image4": "Bild 4",
+    "gallery.image5": "Bild 5",
+    "gallery.image6": "Bild 6",
     
     // Contact
     "contact.title": "Kontakta Oss",
@@ -156,11 +157,12 @@ const translations: Record<Language, Record<string, string>> = {
     // Gallery
     "gallery.title": "معرض الصور",
     "gallery.subtitle": "ألقِ نظرة على متجرنا ومنتجاتنا",
-    "gallery.store": "متجرنا",
-    "gallery.vegetables": "خضروات طازجة",
-    "gallery.fruits": "فواكه طازجة",
-    "gallery.exotic": "منتجات غريبة",
-    "gallery.offers": "عروض الأسبوع",
+    "gallery.image1": "صورة 1",
+    "gallery.image2": "صورة 2",
+    "gallery.image3": "صورة 3",
+    "gallery.image4": "صورة 4",
+    "gallery.image5": "صورة 5",
+    "gallery.image6": "صورة 6",
     
     // Contact
     "contact.title": "اتصل بنا",
@@ -247,11 +249,12 @@ const translations: Record<Language, Record<string, string>> = {
     // Gallery
     "gallery.title": "Gallery",
     "gallery.subtitle": "Take a look at our store and our products",
-    "gallery.store": "Our Store",
-    "gallery.vegetables": "Fresh Vegetables",
-    "gallery.fruits": "Fresh Fruits",
-    "gallery.exotic": "Exotic Products",
-    "gallery.offers": "Weekly Offers",
+    "gallery.image1": "Image 1",
+    "gallery.image2": "Image 2",
+    "gallery.image3": "Image 3",
+    "gallery.image4": "Image 4",
+    "gallery.image5": "Image 5",
+    "gallery.image6": "Image 6",
     
     // Contact
     "contact.title": "Contact Us",

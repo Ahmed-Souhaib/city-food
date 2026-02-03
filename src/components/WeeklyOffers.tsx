@@ -1,7 +1,6 @@
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Tag } from "lucide-react";
 
 // ========================================
 // REDIGERA DINA ERBJUDANDEN HÄR NEDAN
@@ -78,10 +77,6 @@ const WeeklyOffers = () => {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full mb-4">
-            <Tag className="w-4 h-4" />
-            <span className="font-medium">{t("offers.badge")}</span>
-          </div>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             {t("offers.title")}
           </h2>

@@ -1,9 +1,10 @@
 import { useState } from "react";
-import storeExterior from "@/assets/store-exterior.jpg";
-import offerVegetables from "@/assets/offer-vegetables.jpg";
-import offerDeals from "@/assets/offer-deals.jpg";
-import offerFruits from "@/assets/offer-fruits.jpg";
-import offerProduce from "@/assets/offer-produce.jpg";
+import gallery1 from "@/assets/gallery-1.jpg";
+import gallery2 from "@/assets/gallery-2.jpg";
+import gallery3 from "@/assets/gallery-3.jpg";
+import gallery4 from "@/assets/gallery-4.jpg";
+import gallery5 from "@/assets/gallery-5.jpg";
+import gallery6 from "@/assets/gallery-6.jpg";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const Gallery = () => {
@@ -11,11 +12,12 @@ const Gallery = () => {
   const { t, dir, language } = useLanguage();
 
   const images = [
-    { src: storeExterior, alt: "City Food butik i Växjö", titleKey: "gallery.store" },
-    { src: offerVegetables, alt: "Färska grönsaker hos City Food", titleKey: "gallery.vegetables" },
-    { src: offerFruits, alt: "Färsk frukt hos City Food", titleKey: "gallery.fruits" },
-    { src: offerProduce, alt: "Exotiska frukter och grönsaker", titleKey: "gallery.exotic" },
-    { src: offerDeals, alt: "Veckans erbjudanden - Halv pris", titleKey: "gallery.offers" },
+    { src: gallery1, alt: "City Food galleri 1", titleKey: "gallery.image1" },
+    { src: gallery2, alt: "City Food galleri 2", titleKey: "gallery.image2" },
+    { src: gallery3, alt: "City Food galleri 3", titleKey: "gallery.image3" },
+    { src: gallery4, alt: "City Food galleri 4", titleKey: "gallery.image4" },
+    { src: gallery5, alt: "City Food galleri 5", titleKey: "gallery.image5" },
+    { src: gallery6, alt: "City Food galleri 6", titleKey: "gallery.image6" },
   ];
 
   return (
