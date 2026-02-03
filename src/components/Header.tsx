@@ -11,7 +11,6 @@ const Header = () => {
 
   const navLinks = [
     { href: "#hem", label: t("nav.home") },
-    { href: "#erbjudanden", label: t("nav.offers") },
     { href: "#sortiment", label: t("nav.products") },
     { href: "#om-oss", label: t("nav.about") },
     { href: "#galleri", label: t("nav.gallery") },
@@ -53,7 +52,7 @@ const Header = () => {
           <div className="hidden lg:flex items-center gap-6">
             {/* Special CTA Button for Weekly Offers */}
             <a href="#erbjudanden">
-              <Button variant="default" className="gap-2 animate-pulse hover:animate-none">
+              <Button variant="default" className="gap-2">
                 <Tag className="w-4 h-4" />
                 {t("nav.offers")}
               </Button>
@@ -93,7 +92,7 @@ const Header = () => {
             <li>
               <a
                 href="#erbjudanden"
-                className="flex items-center gap-2 text-primary font-bold py-2"
+                className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-4 py-2 rounded-md font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
                 <Tag className="w-4 h-4" />
