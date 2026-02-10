@@ -13,7 +13,7 @@ const offers = [
     // Bild - ändra sökvägen till din egen bild
     image: "/placeholder.svg",
     // Pris eller rabatt att visa
-    discount: "-30%",
+    discount: "",
     // Titlar på olika språk
     title: {
       sv: "Färsk Halal Kyckling",
@@ -27,14 +27,14 @@ const offers = [
       en: "Whole chicken, perfect for the weekend",
     },
     // Ordinarie pris
-    originalPrice: "89 kr/kg",
+    originalPrice: "",
     // Rabatterat pris
-    salePrice: "59 kr/kg",
+    salePrice: "",
   },
   {
     id: 2,
     image: "/placeholder.svg",
-    discount: "-25%",
+    discount: "",
     title: {
       sv: "Premium Basmatiris",
       ar: "أرز بسمتي فاخر",
@@ -45,13 +45,13 @@ const offers = [
       ar: "كيس 5 كجم من أعلى جودة",
       en: "5kg bag of highest quality",
     },
-    originalPrice: "149 kr",
-    salePrice: "109 kr",
+    originalPrice: "",
+    salePrice: "",
   },
   {
     id: 3,
     image: "/placeholder.svg",
-    discount: "-20%",
+    discount: "",
     title: {
       sv: "Arabiska Kryddor Mix",
       ar: "مزيج التوابل العربية",
@@ -62,8 +62,8 @@ const offers = [
       ar: "زعتر، سماق وبهارات",
       en: "Zaatar, sumac and baharat",
     },
-    originalPrice: "79 kr",
-    salePrice: "59 kr",
+    originalPrice: "",
+    salePrice: "",
   },
 ];
 
