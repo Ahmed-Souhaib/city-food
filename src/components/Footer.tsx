@@ -1,5 +1,5 @@
 import { MapPin, Phone, Clock } from "lucide-react";
-import logo from "@/assets/logo.jpg";
+import logo from "@/assets/logo.png";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const Footer = () => {
