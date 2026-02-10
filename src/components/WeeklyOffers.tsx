@@ -10,25 +10,25 @@ import { Badge } from "@/components/ui/badge";
 const offers = [
   {
     id: 1,
-    // Bild - ändra sökvägen till din egen bild
+    // Image – replace with your own path
     image: "/placeholder.svg",
-    // Pris eller rabatt att visa
+    // Discount label (optional)
     discount: "",
-    // Titlar på olika språk
+    // Titles in different languages
     title: {
-      sv: "Färsk Halal Kyckling",
-      ar: "دجاج حلال طازج",
-      en: "Fresh Halal Chicken",
+      sv: "Exempelprodukt A",
+      ar: "منتج تجريبي أ",
+      en: "Example Product A",
     },
-    // Beskrivningar på olika språk
+    // Descriptions in different languages
     description: {
-      sv: "Hela kycklingen, perfekt för helgen",
-      ar: "دجاجة كاملة، مثالية لعطلة نهاية الأسبوع",
-      en: "Whole chicken, perfect for the weekend",
+      sv: "Detta är en exempelbeskrivning",
+      ar: "هذا وصف تجريبي",
+      en: "This is an example description",
     },
-    // Ordinarie pris
+    // Original price
     originalPrice: "",
-    // Rabatterat pris
+    // Sale price
     salePrice: "",
   },
   {
@@ -36,14 +36,14 @@ const offers = [
     image: "/placeholder.svg",
     discount: "",
     title: {
-      sv: "Premium Basmatiris",
-      ar: "أرز بسمتي فاخر",
-      en: "Premium Basmati Rice",
+      sv: "Exempelprodukt B",
+      ar: "منتج تجريبي ب",
+      en: "Example Product B",
     },
     description: {
-      sv: "5kg säck av högsta kvalitet",
-      ar: "كيس 5 كجم من أعلى جودة",
-      en: "5kg bag of highest quality",
+      sv: "Exempelbeskrivning för produkt B",
+      ar: "وصف تجريبي للمنتج ب",
+      en: "Example description for product B",
     },
     originalPrice: "",
     salePrice: "",
@@ -53,14 +53,14 @@ const offers = [
     image: "/placeholder.svg",
     discount: "",
     title: {
-      sv: "Arabiska Kryddor Mix",
-      ar: "مزيج التوابل العربية",
-      en: "Arabic Spice Mix",
+      sv: "Exempelprodukt C",
+      ar: "منتج تجريبي ج",
+      en: "Example Product C",
     },
     description: {
-      sv: "Zaatar, sumak och baharat",
-      ar: "زعتر، سماق وبهارات",
-      en: "Zaatar, sumac and baharat",
+      sv: "Ytterligare en exempelbeskrivning",
+      ar: "وصف تجريبي إضافي",
+      en: "Another example description",
     },
     originalPrice: "",
     salePrice: "",
@@ -70,54 +70,52 @@ const offers = [
     image: "/placeholder.svg",
     discount: "",
     title: {
-      sv: "Arabiska Kryddor Mix",
-      ar: "مزيج التوابل العربية",
-      en: "Arabic Spice Mix",
+      sv: "Exempelprodukt D",
+      ar: "منتج تجريبي د",
+      en: "Example Product D",
     },
     description: {
-      sv: "Zaatar, sumak och baharat",
-      ar: "زعتر، سماق وبهارات",
-      en: "Zaatar, sumac and baharat",
+      sv: "Exempeltext för produkt D",
+      ar: "نص تجريبي للمنتج د",
+      en: "Example text for product D",
     },
     originalPrice: "",
     salePrice: "",
   },
-
   {
     id: 5,
     image: "/placeholder.svg",
     discount: "",
     title: {
-      sv: "Arabiska Kryddor Mix",
-      ar: "مزيج التوابل العربية",
-      en: "Arabic Spice Mix",
+      sv: "Exempelprodukt E",
+      ar: "منتج تجريبي هـ",
+      en: "Example Product E",
     },
     description: {
-      sv: "Zaatar, sumak och baharat",
-      ar: "زعتر، سماق وبهارات",
-      en: "Zaatar, sumac and baharat",
+      sv: "Exempeltext för produkt E",
+      ar: "نص تجريبي للمنتج هـ",
+      en: "Example text for product E",
     },
     originalPrice: "",
     salePrice: "",
   },
-
   {
     id: 6,
     image: "/placeholder.svg",
     discount: "",
     title: {
-      sv: "Arabiska Kryddor Mix",
-      ar: "مزيج التوابل العربية",
-      en: "Arabic Spice Mix",
+      sv: "Exempelprodukt F",
+      ar: "منتج تجريبي و",
+      en: "Example Product F",
     },
     description: {
-      sv: "Zaatar, sumak och baharat",
-      ar: "زعتر، سماق وبهارات",
-      en: "Zaatar, sumac and baharat",
+      sv: "Exempeltext för produkt F",
+      ar: "نص تجريبي للمنتج و",
+      en: "Example text for product F",
     },
     originalPrice: "",
     salePrice: "",
-  }
+  },
 ];
 
 // ========================================
