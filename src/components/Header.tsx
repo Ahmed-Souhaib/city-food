@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Menu, X, MapPin, Phone, Clock, Tag } from "lucide-react";
-import logo from "@/assets/logo.jpg";
+import logo from "@/assets/logo.png";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "./ui/button";

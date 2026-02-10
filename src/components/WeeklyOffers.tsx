@@ -65,6 +65,59 @@ const offers = [
     originalPrice: "",
     salePrice: "",
   },
+  {
+    id: 4,
+    image: "/placeholder.svg",
+    discount: "",
+    title: {
+      sv: "Arabiska Kryddor Mix",
+      ar: "مزيج التوابل العربية",
+      en: "Arabic Spice Mix",
+    },
+    description: {
+      sv: "Zaatar, sumak och baharat",
+      ar: "زعتر، سماق وبهارات",
+      en: "Zaatar, sumac and baharat",
+    },
+    originalPrice: "",
+    salePrice: "",
+  },
+
+  {
+    id: 5,
+    image: "/placeholder.svg",
+    discount: "",
+    title: {
+      sv: "Arabiska Kryddor Mix",
+      ar: "مزيج التوابل العربية",
+      en: "Arabic Spice Mix",
+    },
+    description: {
+      sv: "Zaatar, sumak och baharat",
+      ar: "زعتر، سماق وبهارات",
+      en: "Zaatar, sumac and baharat",
+    },
+    originalPrice: "",
+    salePrice: "",
+  },
+
+  {
+    id: 6,
+    image: "/placeholder.svg",
+    discount: "",
+    title: {
+      sv: "Arabiska Kryddor Mix",
+      ar: "مزيج التوابل العربية",
+      en: "Arabic Spice Mix",
+    },
+    description: {
+      sv: "Zaatar, sumak och baharat",
+      ar: "زعتر، سماق وبهارات",
+      en: "Zaatar, sumac and baharat",
+    },
+    originalPrice: "",
+    salePrice: "",
+  }
 ];
 
 // ========================================
