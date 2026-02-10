@@ -94,18 +94,6 @@ const About = () => {
               </div>
             </div>
 
-            <div className="bg-primary/10 rounded-2xl p-8 border border-primary/20">
-              <h3 className="font-display text-xl font-semibold text-foreground mb-3">
-                {language === "ar" ? "وعدنا لكم" : language === "en" ? "Our promise to you" : "Vårt löfte till dig"}
-              </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                {language === "ar"
-                  ? "نضمن منتجات طازجة وأسعار عادلة وتجربة تسوق تشعرك بأنك في بيتك. لم تجد ما تبحث عنه؟ اسألنا - سنبذل قصارى جهدنا لتوفيره لك!"
-                  : language === "en"
-                  ? "We guarantee fresh products, fair prices and a shopping experience that feels like home. Can't find what you're looking for? Ask us – we'll do our best to get it for you!"
-                  : "Vi garanterar färska produkter, schyssta priser och en shoppingupplevelse som känns som hemma. Kommer du inte hittar det du söker? Fråga oss – vi gör vårt bästa för att ordna det åt dig!"}
-              </p>
-            </div>
           </div>
         </div>
       </div>
