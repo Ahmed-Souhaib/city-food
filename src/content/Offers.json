@@ -1,0 +1,21 @@
+{
+  "offers": [
+    {
+      "id": 1,
+      "image": "/placeholder.svg",
+      "discount": "",
+      "title": {
+        "sv": "Exempelprodukt A",
+        "ar": "منتج تجريبي أ",
+        "en": "Example Product A"
+      },
+      "description": {
+        "sv": "Detta är en exempelbeskrivning",
+        "ar": "هذا وصف تجريبي",
+        "en": "This is an example description"
+      },
+      "originalPrice": "",
+      "salePrice": ""
+    }
+  ]
+}

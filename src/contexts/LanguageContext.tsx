@@ -29,7 +29,7 @@ const translations: Record<Language, Record<string, string>> = {
     "hero.cta": "Besök oss idag",
     "hero.products": "Se vårt sortiment",
     "hero.trust.fresh": "Färska varor dagligen",
-    "hero.trust.halal": "Halal-certifierat",
+    "hero.trust.halal": "Halal certifierat",
     "hero.trust.local": "Lokalt i Växjö",
     
     // Categories
@@ -51,11 +51,11 @@ const translations: Record<Language, Record<string, string>> = {
     // About
     "about.title": "Om City Food",
     "about.subtitle": "Din lokala butik för äkta arabiska och orientaliska smaker",
-    "about.p1": "Välkommen till City Food – din destination för autentiska arabiska och orientaliska livsmedel i Växjö. Vi har noggrant valt ut produkter av högsta kvalitet för att ge dig den äkta smaken av Mellanöstern.",
-    "about.p2": "Vår butik erbjuder ett brett sortiment av halal-certifierat kött, färska grönsaker, kryddor, ris, bröd och traditionella delikatesser. Vi strävar efter att vara mer än bara en butik – vi vill vara en mötesplats för alla som älskar god mat.",
+    "about.p1": "Välkommen till City Food, din destination för autentiska arabiska och orientaliska livsmedel i Växjö. Vi har noggrant valt ut produkter av högsta kvalitet för att ge dig den äkta smaken av Mellanöstern.",
+    "about.p2": "Vår butik erbjuder ett brett sortiment av halal certifierat kött, färska grönsaker, kryddor, ris, bröd och traditionella delikatesser. Vi strävar efter att vara mer än bara en butik, vi vill vara en mötesplats för alla som älskar god mat.",
     "about.feature.quality": "Kvalitetsprodukter",
     "about.feature.quality.desc": "Noggrant utvalda varor från pålitliga leverantörer",
-    "about.feature.halal": "Halal-certifierat",
+    "about.feature.halal": "Halal certifierat",
     "about.feature.halal.desc": "Stort utbud av halal-kött och produkter",
     "about.feature.fresh": "Färska varor",
     "about.feature.fresh.desc": "Dagliga leveranser av frukt, grönt och bröd",

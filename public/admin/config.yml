@@ -1,0 +1,41 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "offers"
+    label: "Weekly Offers"
+    files:
+      - file: "content/offers.json"
+        label: "Offers"
+        name: "offers"
+        fields:
+          - label: "Offers"
+            name: "offers"
+            widget: "list"
+            fields:
+              - { label: "ID", name: "id", widget: "number" }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Discount", name: "discount", widget: "string", required: false }
+
+              - label: "Title"
+                name: "title"
+                widget: "object"
+                fields:
+                  - { label: "Swedish", name: "sv", widget: "string" }
+                  - { label: "Arabic", name: "ar", widget: "string" }
+                  - { label: "English", name: "en", widget: "string" }
+
+              - label: "Description"
+                name: "description"
+                widget: "object"
+                fields:
+                  - { label: "Swedish", name: "sv", widget: "string" }
+                  - { label: "Arabic", name: "ar", widget: "string" }
+                  - { label: "English", name: "en", widget: "string" }
+
+              - { label: "Original Price", name: "originalPrice", widget: "string", required: false }
+              - { label: "Sale Price", name: "salePrice", widget: "string", required: false }

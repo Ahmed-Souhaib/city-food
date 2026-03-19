@@ -1,122 +1,12 @@
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import offersData from "../content/offers.json";
 
 // ========================================
 // REDIGERA DINA ERBJUDANDEN HÄR NEDAN
 // Edit your offers here below
 // ========================================
-
-const offers = [
-  {
-    id: 1,
-    // Image – replace with your own path
-    image: "/placeholder.svg",
-    // Discount label (optional)
-    discount: "",
-    // Titles in different languages
-    title: {
-      sv: "Exempelprodukt A",
-      ar: "منتج تجريبي أ",
-      en: "Example Product A",
-    },
-    // Descriptions in different languages
-    description: {
-      sv: "Detta är en exempelbeskrivning",
-      ar: "هذا وصف تجريبي",
-      en: "This is an example description",
-    },
-    // Original price
-    originalPrice: "",
-    // Sale price
-    salePrice: "",
-  },
-  {
-    id: 2,
-    image: "/placeholder.svg",
-    discount: "",
-    title: {
-      sv: "Exempelprodukt B",
-      ar: "منتج تجريبي ب",
-      en: "Example Product B",
-    },
-    description: {
-      sv: "Exempelbeskrivning för produkt B",
-      ar: "وصف تجريبي للمنتج ب",
-      en: "Example description for product B",
-    },
-    originalPrice: "",
-    salePrice: "",
-  },
-  {
-    id: 3,
-    image: "/placeholder.svg",
-    discount: "",
-    title: {
-      sv: "Exempelprodukt C",
-      ar: "منتج تجريبي ج",
-      en: "Example Product C",
-    },
-    description: {
-      sv: "Ytterligare en exempelbeskrivning",
-      ar: "وصف تجريبي إضافي",
-      en: "Another example description",
-    },
-    originalPrice: "",
-    salePrice: "",
-  },
-  {
-    id: 4,
-    image: "/placeholder.svg",
-    discount: "",
-    title: {
-      sv: "Exempelprodukt D",
-      ar: "منتج تجريبي د",
-      en: "Example Product D",
-    },
-    description: {
-      sv: "Exempeltext för produkt D",
-      ar: "نص تجريبي للمنتج د",
-      en: "Example text for product D",
-    },
-    originalPrice: "",
-    salePrice: "",
-  },
-  {
-    id: 5,
-    image: "/placeholder.svg",
-    discount: "",
-    title: {
-      sv: "Exempelprodukt E",
-      ar: "منتج تجريبي هـ",
-      en: "Example Product E",
-    },
-    description: {
-      sv: "Exempeltext för produkt E",
-      ar: "نص تجريبي للمنتج هـ",
-      en: "Example text for product E",
-    },
-    originalPrice: "",
-    salePrice: "",
-  },
-  {
-    id: 6,
-    image: "/placeholder.svg",
-    discount: "",
-    title: {
-      sv: "Exempelprodukt F",
-      ar: "منتج تجريبي و",
-      en: "Example Product F",
-    },
-    description: {
-      sv: "Exempeltext för produkt F",
-      ar: "نص تجريبي للمنتج و",
-      en: "Example text for product F",
-    },
-    originalPrice: "",
-    salePrice: "",
-  },
-];
 
 // ========================================
 
@@ -138,7 +28,7 @@ const WeeklyOffers = () => {
 
         {/* Offers Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {offers.map((offer) => (
+          {offersData.offers.map((offer) => (
             <Card
               key={offer.id}
               className="group overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-elevated hover:-translate-y-2 bg-card border-border"

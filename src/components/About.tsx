@@ -16,7 +16,7 @@ const About = () => {
     : language === "en"
     ? [
         "Specialized in Arabic and Oriental products",
-        "Wide selection of halal-certified goods",
+        "Wide selection of halal certified goods",
         "Fresh products delivered daily",
         "Locally owned and operated",
         "Knowledgeable and helpful staff",
@@ -24,7 +24,7 @@ const About = () => {
       ]
     : [
         "Specialiserade på arabiska och orientaliska produkter",
-        "Stort urval av halal-certifierade varor",
+        "Stort urval av halal certifierade varor",
         "Färska produkter levereras dagligen",
         "Lokalt ägd och driven butik",
         "Kunnig och hjälpsam personal",
