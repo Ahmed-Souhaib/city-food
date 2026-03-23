@@ -1,7 +1,7 @@
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import offersData from "../content/offers.json";
+import offersData from "../../content/offers.json";
 
 // ========================================
 // REDIGERA DINA ERBJUDANDEN HÄR NEDAN
