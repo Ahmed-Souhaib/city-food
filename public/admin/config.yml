@@ -9,7 +9,7 @@ collections:
   - name: "offers"
     label: "Weekly Offers"
     files:
-      - file: "content/offers.json"
+      - file: "src/content/offers.json"
         label: "Offers"
         name: "offers"
         fields:
